@@ -3,7 +3,7 @@
 This is a Vagrant development environment for the esp8266.
 
 It consists of:
-* a Debian Jessie Vagrant box
+* a Debian Jessie Vagrant box (ARTACK/debian-jessie)
 * The esp-open-sdk from https://github.com/pfalcon/esp-open-sdk
 
 It would normally have access to the host system's USB port, which allows the burning of newly
