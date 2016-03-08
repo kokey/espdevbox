@@ -7,12 +7,12 @@ It consists of:
 * The esp-open-sdk from https://github.com/pfalcon/esp-open-sdk
 
 It would normally have access to the host system's USB port, which allows the burning of newly
-compiled firmware over the USB UART to the esp8266 module.
+compiled firmware over a USB UART to the esp8266 module.
 
 To use this:
-* install vagrant and the virtualisation environment you want to use with it (usually Virtualbox)
-* go to the directory the Vagrantfile from this project is in
-* do `vagrant up`
+* install Vagrant and the virtualisation environment you want to use with it (usually Virtualbox).
+* go to the directory the Vagrantfile from this project is in.
+* do `vagrant up`.
 
 This will download the Debian vagrantbox, which could take a while.  It will also clone the 
 esp-open-sdk and download its dependencies and build it, which can easily take at least half
