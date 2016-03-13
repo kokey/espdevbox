@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
   	sudo apt-get update
   	sudo apt-get install -y make autoconf automake libtool gcc g++ gperf flex bison texinfo gawk ncurses-dev libexpat-dev python python-serial sed git
-	sudo apt-get install -y libtool-bin unrar-free unzip vim
+	sudo apt-get install -y libtool-bin unrar-free unzip vim picocom
 	echo syntax on >> /etc/vim/vimrc
 	su - vagrant -c 'git clone https://github.com/pfalcon/esp-open-sdk.git'
 	su - vagrant -c 'cd esp-open-sdk && make'
