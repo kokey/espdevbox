@@ -18,6 +18,7 @@ Vagrant.configure(2) do |config|
 	su - vagrant -c 'git clone https://github.com/esp8266/source-code-examples.git'
 	echo export PATH=/opt/esp-open-sdk/xtensa-lx106-elf/bin:\$PATH >> /home/vagrant/.bashrc
 	echo export PATH=/opt/esp-open-sdk/xtensa-lx106-elf/bin:\$PATH >> /root/.bashrc
+	ln -s /opt/esp-open-sdk/xtensa-lx106-elf/bin/esptool.py /usr/local/bin
 	# todo: add USB serial filter
   SHELL
 end
